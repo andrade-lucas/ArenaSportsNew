@@ -13,4 +13,10 @@
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Arena.Domain\Arena.Domain.csproj" />
+    <ProjectReference Include="..\Arena.Infra\Arena.Infra.csproj" />
+    <ProjectReference Include="..\Arena.Shared\Arena.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

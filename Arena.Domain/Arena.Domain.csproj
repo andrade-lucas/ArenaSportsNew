@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Arena.Shared\Arena.Shared.csproj" />
+  </ItemGroup>
+
 </Project>
