@@ -1,3 +1,4 @@
+using Arena.Domain.ValueObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Arena.Tests.ValueObjects
@@ -8,13 +9,15 @@ namespace Arena.Tests.ValueObjects
         [TestMethod]
         public void ShouldReturnValidWhenDocumentIsValid()
         {
-            Assert.Fail();
+            var document = new Document("06828764374");
+            Assert.AreEqual(true, document.IsValid);
         }
 
         [TestMethod]
         public void ShouldReturnInvalidWhenDocumentIsInvalid()
         {
-            Assert.Fail();
+            var document = new Document("12573753453453");
+            Assert.AreEqual(true, document.IsValid);
         }
     }
 }
