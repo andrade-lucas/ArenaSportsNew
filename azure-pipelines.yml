@@ -43,8 +43,8 @@ steps:
 
 # ...
 # do this after your tests have run
-- script: dotnet test .\Arena.Tests --logger trx --collect "Code coverage"
-- task: PublishTestResults@2
-  inputs:
-    testRunner: VSTest
-    testResultsFiles: '**/*.trx'
+# - script: dotnet test .\Arena.Tests --logger trx --collect "Code coverage"
+# - task: PublishTestResults@2
+#   inputs:
+#     testRunner: VSTest
+#     testResultsFiles: '**/*.trx'
